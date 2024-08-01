@@ -37,6 +37,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
 /* General Styles */
 
 .container {
@@ -483,6 +491,10 @@ body {
 
 .barbers-item {
 	width: calc(100% - 60px / 3);
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
 }
 
 .barbers-item-title {
@@ -506,6 +518,40 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.28px;
+}
+
+.barbers-social-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.barbers-social-item {
+	width: 44px;
+	height: 44px;
+}
+
+.barbers-social-link {
+	width: 100%;
+	height: 100%;
+
+	color: var(--primary-black-color);
+	background-color: var(--primary-white-color);
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.barbers-social-icon {
+	fill: currentColor;
+}
+
+.barbers-social-link:hover,
+.barbers-social-link:focus {
+	background-color: var(--primary-orange-color);
+	color: var(--primary-white-color);
 }
 
 /* PORTFOLIO SECTION  */
